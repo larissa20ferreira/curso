@@ -154,3 +154,42 @@ print("Quantidade de frases: ", contar_frases(text))"""
 
 
 #Atividade 03
+#Criando senhas aleatórias
+
+"""import random
+lista = []
+#n = random.randint(1,60)
+s = 'abcdefghijklmnopqrstuvwxABCDEFGHIJKLMNOPQRSTUVWZ1234567890!@#$%&*'
+letras = random.sample(s,8)
+print(letras)
+unificada = ''.join(letras)
+print(unificada)"""
+"""for i in range(6):
+    n = n = random.randint(1,60)
+    print("N sorteado entre 1 e 60: ", n)"""
+
+# atividade extra
+"""def calcular_carga_tributaria(preco, lucro,custo):
+
+    imposto = preco - custo - lucro
+    porcentagem_carga_tributaria = ( imposto / preco )* 100 
+    return porcentagem_carga_tributaria
+
+preco = int(input("Digite o preço: "))
+lucro = int(input("Digite o lucro: "))
+custo = int(input("Digite o valor do custo: "))
+
+carga_tributaria = calcular_carga_tributaria(preco,lucro,custo)
+
+print(f"O valor de resto da carga tributaria é: {carga_tributaria}")"""
+
+#atividade extra
+
+"""def calcular_juros_compostos(capital, juros, tempo):
+    montante = capital *(juros + 1/100)** tempo
+    return montante
+capital = float(input("Digite o valor inicial: "))
+juros = float(input("Digite o valor do juros: "))
+tempo = int(input("Digite o número de anos: "))
+teste = calcular_juros_compostos(capital, juros, tempo)
+print(f"o valor montante é: {teste} ")"""
