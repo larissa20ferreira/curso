@@ -45,6 +45,40 @@ conjunto.clear()
 print(conjunto)
 
 """
+pessoas = []
+while True:
+    nome = input("Digite o nome da pessoa (ou 'sair' para finalizar): ")
+    if nome.lower() == 'sair':
+        break
+    try:
+        idade = int(input("Digite a idade da pessoa: "))
+    except ValueError:
+        print("Idade inválida, tente novamente.")
+        continue
+
+    if idade < 18:
+        classificacao = 'Criança'
+    elif 18 <= idade < 65:
+        classificacao = 'Adulto'
+    else:
+        classificacao = 'Idoso'
+    
+    pessoa = {"nome": nome, "idade": idade, "classificacao": classificacao}
+    pessoas.append(pessoa)
+
+total_pessoas = len(pessoas)
+if total_pessoas > 0:
+    soma_idades = sum(pessoa['idade'] for pessoa in pessoas)
+    idade_media = soma_idades / total_pessoas
+else:
+    idade_media = 0
+
+print("\nDados das pessoas entrevistadas:")
+for pessoa in pessoas:
+    print(f"Nome: {pessoa['nome']}, Idade: {pessoa['idade']}, Classificação: {pessoa['classificacao']}")
+    
+print(f"\nNúmero total de pessoas entrevistadas: {total_pessoas}")
+print(f"Idade média das pessoas entrevistadas: {idade_media:.2f}")
 
 
 
